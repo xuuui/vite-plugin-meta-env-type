@@ -1,5 +1,11 @@
 # vite-plugin-meta-env-type
 
+## 1.0.2
+
+### Patch Changes
+
+- fix
+
 ## 1.0.1
 
 ### Patch Changes
