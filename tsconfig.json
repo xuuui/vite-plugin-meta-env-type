@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "target": "esnext",
+    "types": ["node", "vite/client"],
+    "lib": ["esnext"],
+    "declarationDir": "dist/types",
+    "emitDeclarationOnly": true,
+
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "skipLibCheck": true,
+
+    // Other Outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+
+    // Recommended Options
+    "strict": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+
+    "noImplicitThis": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["./src"]
+}
