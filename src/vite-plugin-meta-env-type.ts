@@ -58,5 +58,6 @@ function generateTypeDefs(envVars: Record<string, string>): string {
 
 interface ImportMetaEnv {
 ${envProperties}
+}
 `
 }
