@@ -49,7 +49,7 @@ export function vitePluginMetaEnvType({
 function generateTypeDefs(envVars: Record<string, string>): string {
   const envProperties = Object.entries(envVars)
     .map(([key, value]) => {
-      return `      ${key}: string`
+      return `  readonly ${key}: string`
     })
     .join('\n')
 
@@ -57,9 +57,6 @@ function generateTypeDefs(envVars: Record<string, string>): string {
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
-    env: {
 ${envProperties}
-    }
-  }
 `
 }
